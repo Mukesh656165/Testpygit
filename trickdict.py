@@ -12,3 +12,12 @@ print(total_incm)
 # sorted by Keys
 for key in sorted(a_dict):
     print(key,'--->',a_dict[key])
+# Sorted of only values
+for value in sorted(a_dict.values()):
+    print(value)
+
+# sorted with values and key
+def by_value(item):
+    return item[1]
+for k, v in sorted(a_dict.items(), key=by_value):
+    print(k, '->', v)
