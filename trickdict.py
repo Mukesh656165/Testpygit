@@ -9,3 +9,6 @@ for value in a_dict.values():
     total_incm += value
 print(total_incm)
 
+# sorted by Keys
+for key in sorted(a_dict):
+    print(key,'--->',a_dict[key])
