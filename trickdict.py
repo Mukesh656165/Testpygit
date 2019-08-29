@@ -22,6 +22,7 @@ def by_value(item):
 for k, v in sorted(a_dict.items(), key=by_value):
     print(k, '->', v)
 
+#change the key into values and then sorted as changes value as key
 a_dict = {1:'jason',2:'james',3:'audit'}
 new_dict = {}
 for key,value in a_dict.items():
