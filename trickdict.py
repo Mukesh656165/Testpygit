@@ -21,3 +21,11 @@ def by_value(item):
     return item[1]
 for k, v in sorted(a_dict.items(), key=by_value):
     print(k, '->', v)
+
+a_dict = {1:'jason',2:'james',3:'audit'}
+new_dict = {}
+for key,value in a_dict.items():
+    new_dict[value]= key
+print(new_dict)
+for key in sorted(new_dict):
+    print(key,'-->',new_dict[key])
